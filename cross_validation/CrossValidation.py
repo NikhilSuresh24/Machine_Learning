@@ -17,7 +17,7 @@ scores = []
 accuracies = []
 for folds in range(5):#repeats process for each test group
     start = int(79*folds)
-    end = int(79*(i+folds))
+    end = int(79*(1+folds))
     
     #puts together training set
     frames = [data.iloc[0:start][['failures','Medu', 'Fedu', 'traveltime','studytime','freetime', 'famrel','goout','Dalc','Walc','health','absences','avg_grade']],data.iloc[end:395][['failures','Medu', 'Fedu', 'traveltime','studytime','freetime', 'famrel','goout','Dalc','Walc','health','absences','avg_grade']]]
